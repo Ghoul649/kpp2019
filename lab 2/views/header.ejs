@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title><%=title%></title>
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+    <div id="header">
+        <h1>
+            Welcome  
+        </h1>
+    </div>
+    <div id="sidebar">
+        <table class="nav">
+            <tr>
+                <td>
+                    <a class="navbutton" href="/index"><div id="navbutton">Home</div></a>
+                </td>
+                <td>
+                    <a class="navbutton" href="/top"><div id="navbutton">Top-10</div></a>
+                </td>
+                <td>
+                    <a class="navbutton" href="/about"><div id="navbutton">About</div></a>
+                </td>
+                <td width="200">
+					<%if(user){%>
+						Login : <%=user.login%>
+						<a href="/logout"><button>Log Out</button></a>
+					<%}else{%>
+                    <form action="/login" method="post">
+
+                        <label for="login">Login:</label>
+                        <input type="text" required id="login" name="login" />
+
+
+                        <label for="password">Password:</label>
+                        <input type="password" required id="password" name="password" />
+
+                        <input type="submit" value="Submit" />
+
+                    </form>
+					<a href="/register"><button>Register</button></a>
+					<%}%>
+                </td>
+            </tr>
+        </table>
+    </div>
+	<div id="main">

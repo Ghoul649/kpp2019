@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Main</title>
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+    <div id="header">
+        <h1>
+            Welcome  
+        </h1>
+    </div>
+    <div id="sidebar">
+        <table class="nav">
+            <tr>
+                <td>
+                    <a class="navbutton" href="home"><div id="navbutton">Home</div></a>
+                </td>
+                <td>
+                    <a class="navbutton" href="top"><div id="navbutton">Top-10</div></a>
+                </td>
+                <td>
+                    <a class="navbutton" href="about"><div id="navbutton">About</div></a>
+                </td>
+                <td width="200">
+
+                    <form action="../login" method="post">
+
+                        <label for="login">Login:</label>
+                        <input type="text" required id="login" name="login" />
+
+
+                        <label for="password">Password:</label>
+                        <input type="password" required id="password" name="password" />
+
+                        <input type="submit" value="Submit" />
+
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="main">
+        <div id="post">
+            <div id="post_head"> Name </div>
+            <div id="post_body">
+                <h1>Бфывывфы</h1>
+                Как видно из данного примера, файл со стилем не хранит никаких данных, кроме синтаксиса CSS. В свою очередь и HTML-документ содержит только ссылку на файл со стилем, т. е. таким способом в полной мере реализуется принцип разделения кода и оформления сайта. Поэтому использование связанных стилей является наиболее универсальным и удобным методом добавления стиля на сайт. Ведь стили хранятся в одном файле, а в HTML-документах указывается только ссылка на него.
+            </div>
+            <div id="post_foot"><pre>Autor: user    Views: 1147</pre></div>
+        </div>
+    </div>
+    <div id="footer">
+        <table align="center">
+            <tr>
+                <td>
+            <a href=""><div id="button"><</div></a>
+                    </td>
+            <td width="100">. . .</td>
+                <td >
+            <a href=""><div id="button">></div></a>
+                    </td>
+                </tr>
+        </table>
+    </div>
+    
+</body>
+</html>

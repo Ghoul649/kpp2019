@@ -1,0 +1,19 @@
+</div>
+    <div id="footer">
+	<%if (page != '-'){%>
+        <table align="center">
+            <tr>
+                <td>
+            <a href= <%if (parseInt(page) > 1){%> <%= parseInt(page) - 1%> <%}%> ><div id="button"><</div></a>
+                    </td>
+            <td width="100"> <%=page%> </td>
+                <td >
+            <a href= <%if (parseInt(page) < parseInt(pages)){%><%= parseInt(page) + 1%><%}%>><div id="button">></div></a>
+                    </td>
+                </tr>
+        </table>
+		<%}%>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,11 @@
+<%- include('header',{title:'Index', user: user})%>
+<% for(var i=0; i<titles.length;i++) {%>
+<div id="post">
+	<div id="post_head"><a href=<%=titles[i].href%>> <%- titles[i].head %> </a> </div>
+    <div id="post_body">
+		<%- titles[i].body %>
+    </div>
+    <div id="post_foot"><pre>	Autor: <%= titles[i].autor %>    Views: <%= titles[i].views %></pre></div>
+</div>
+<% }%>
+<%- include('footer',{page:page, pages:pages})%>
